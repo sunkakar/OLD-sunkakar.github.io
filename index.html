@@ -67,6 +67,8 @@ Purpose: Creating a Personal Website to show accolades and achievements
     .info img {
         height:100%;
         width:100%;
+        max-height: 800px;
+        max-width: 600px;
     }
 
     .namehead {
@@ -81,11 +83,6 @@ Purpose: Creating a Personal Website to show accolades and achievements
         font-size: 50px;
     }
 
-    /* Style image 
-    #pic-sk{
-        border-radius: 50%;
-    }
-    */
 
     .carousel{
       margin:auto;
@@ -101,11 +98,28 @@ Purpose: Creating a Personal Website to show accolades and achievements
     .carousel-caption h3 {
         color: #fff !important;
     }
+
     /*Prevent image resizing in the Carousel*/
     .carousel-inner > .item > img { 
         width:100%; 
         height:100%; 
-    } 
+    }
+    
+    .info a {
+      color: white;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    
+    .info a:hover { 
+      cursor: pointer;
+    }
+    
+    .info a:active {
+      box-shadow: none;
+      top: 5px;
+    }
 
     footer{
         padding-left: 160px;
@@ -202,7 +216,7 @@ Purpose: Creating a Personal Website to show accolades and achievements
                 <h1>About Me</h1>
                 <p>
                     Experienced Peer Mentor with a demonstrated history of working in the higher education industry. 
-                    Skilled in Programming, Mentoring, Management, and Customer Service. Strong education professional with a Bachelor's degree 
+                    Skilled in Programming, Mentoring, Management, and Customer Service. Strong education professional pursuing a Bachelor's degree 
                     focused in Computer Science and minors in Business and Math from Indiana University–Purdue University Indianapolis.
                 </p> 
             </div>
@@ -218,10 +232,27 @@ Purpose: Creating a Personal Website to show accolades and achievements
         </div>
         <br>
         <hr>
-
+        <div id="projects">
+            <div class="info text-left">
+              <h1>Projects</h1>
+              <ol>
+                  <li>
+                      <a href="https://cs.iupui.edu/~skakar/n341/">Client-Side Web Programming:</a>
+                      <ul>
+                          <li>Created a Mood-tracker website using jQuery library</li>
+                          <li>Website contains a Form that collects data</li>
+                          <li>Uses API to interpret data in graphical form</li>
+                          <li>Used: Vanilla JS, HTML, CSS</li>
+                      </ul>
+                  </li>
+              </ol>
+            </div>
+         </div>
+        <br>
+        <hr>
        </div>
        <footer>
-           This website is built from scratch using Bootstrap 4, jQuery, and Github pages. No preset themes were used in the creation of this website. Last Updated: 1110,7/20/18
+           This website is built from scratch using Bootstrap 4, jQuery, and Github pages. No preset themes were used in the creation of this website. Last Updated: 1420,7/20/18
        </footer>
   </body>
 </html>
