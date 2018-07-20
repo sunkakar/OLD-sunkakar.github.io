@@ -11,7 +11,7 @@ Purpose: Creating a Personal Website to show accolades and achievements
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Scripts-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Prociono|Roboto+Slab" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="/website.js"></script>
@@ -102,12 +102,29 @@ Purpose: Creating a Personal Website to show accolades and achievements
         height:100%; 
     } 
 
+    footer{
+        padding-left: 160px;
+        font-size: 20px;
+        color:#6FB98F;
+        text-align: center;
+        font-family: 'Prociono', serif;
+    }
+
     /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
     @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 15px;}
+        .sidenav {
+            width: 100px;
+            padding-top: 15px;
+        }
         .sidenav a {font-size: 18px;}
+        .main {
+            margin-left: 100px;
+        }
         #info {font-size: 18px;}
+        #resumeimg {width: 80%; height: 80%;}
+        footer {padding-left: 100px;font-size: 10px;}
     }
+
     </style>
   </head>
   <body>
@@ -185,7 +202,7 @@ Purpose: Creating a Personal Website to show accolades and achievements
         <div id="resume">
           <div class="info text-left">
             <h1>Resume</h1>
-            <img src="resume.jpg" alt="resume" height="800" width="600">
+            <img id="resumeimg" src="resume.jpg" alt="resume" height="800" width="600">
             <h4>Date: 7/19/2018</h4>
           </div>
         </div>
@@ -193,6 +210,9 @@ Purpose: Creating a Personal Website to show accolades and achievements
         <hr>
 
        </div>
+       <footer>
+           This website is built from scratch using Bootstrap 4, jQuery, and Github pages. No preset themes were used in the creation of this website. 
+       </footer>
   </body>
 </html>
   
