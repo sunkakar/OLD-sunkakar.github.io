@@ -74,15 +74,13 @@ Purpose: Creating a Personal Website to show accolades and achievements
     .namehead {
         background-color: #6FB98F;
         color:aliceblue;
-        top:0;
-        right:160px;
+        
     }
 
     .namehead h1 {
         font-family: 'Prociono', serif;
         font-size: 50px;
     }
-
 
     .carousel{
       margin:auto;
@@ -130,21 +128,34 @@ Purpose: Creating a Personal Website to show accolades and achievements
     }
 
     /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-    @media screen and (max-height: 550px) {
+    @media screen and (max-height: 680px) {
         .sidenav {
             width: 100px;
             padding-top: 15px;
         }
         .sidenav a {font-size: 18px;}
+        .carousel-caption h3, .carousel-caption p{
+            font-size: 80%;
+        }
+        .carousel-indicators ol{
+            height: 5px;
+            width: 5px;
+        }
         .main {
             margin-left: 100px;
         }
-        .info {
-            font-size: 18px;
+        .info p, ol{
+            font-size: 80%;
+        }
+        .info h1{
+            font-size: 25px;
         }
         .info img {
             height: 100%;
             width: 100%;
+        }
+        .namehead h1{
+            font-size: 30px;
         }
         footer {padding-left: 100px;font-size: 10px;}
     }
